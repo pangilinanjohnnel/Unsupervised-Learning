@@ -7,7 +7,7 @@ from sklearn import metrics
 from sklearn.feature_selection import SelectKBest
 from sklearn.decomposition import PCA
 
-df=pd.read_csv(r"C:\Users\Johnnel\Desktop\TIP folder\1st year 2nd sem\data mining\to do\wholesale+customers\Wholesale customers data.csv")
+df = pd.read_csv(r"archive\Wholesale customers data.csv")
 
 X = df.drop(['Channel', 'Region'], axis=1)
 y = df['Channel']
