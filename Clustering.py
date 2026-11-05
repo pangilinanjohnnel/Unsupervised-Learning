@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import silhouette_score
 
-df = pd.read_csv(r"C:\Users\Johnnel\Desktop\TIP folder\1st year 2nd sem\applied machine learning\ex2\Exam score prediction\Exam_Score_Prediction.csv")
+df = pd.read_csv(r"archive\Exam_Score_Prediction.csv")
 
 le = LabelEncoder()
 for col in df.select_dtypes(include=['object']).columns:
